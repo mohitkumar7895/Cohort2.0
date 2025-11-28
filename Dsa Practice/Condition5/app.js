@@ -122,43 +122,79 @@
 // console.log(`Total electricity bill is: ₹${amount}`);
 
 //Q-7 Counting number of days in a given month of a year
+// let prompt = require("prompt-sync")();
+// let month = Number(prompt("Enter month number (1-12): "));
+
+// let year = Number(prompt("Enter year: "));
+// let days;
+// switch (month) {
+//   case 1:
+//   case 3:
+
+//   case 5:
+//   case 7:
+//   case 8:
+//   case 10:
+//   case 12:
+//     days = 31;
+
+//     break;
+//   case 4:
+//   case 6:
+//   case 9:
+//   case 11:
+//     days = 30;
+//     break;
+//   case 2:
+//     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+//       days = 29;
+//     } else {
+//       days = 28;
+//     }
+
+//     break;
+
+//   default:
+//     console.log("Invalid month number");
+//     days = 0;
+//     break;
+// }
+// if (days != 0) {
+//   console.log(`Number of days in month ${month} of year ${year} is: ${days}`);
+// }
+
+
+
+//switch case statement
+//Q-1 days in a week
 let prompt = require("prompt-sync")();
-let month = Number(prompt("Enter month number (1-12): "));
+let dayNumber = Number(prompt("Enter day number (1-7): "));
+let dayName;
+switch (dayNumber) {
+    case 1:
+        dayName = "Monday";    
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
 
-let year = Number(prompt("Enter year: "));
-let days;
-switch (month) {
-  case 1:
-  case 3:
-
-  case 5:
-  case 7:
-  case 8:
-  case 10:
-  case 12:
-    days = 31;
-
-    break;
-  case 4:
-  case 6:
-  case 9:
-  case 11:
-    days = 30;
-    break;
-  case 2:
-    if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
-      days = 29;
-    } else {
-      days = 28;
-    }
-
-    break;
-
-  default:
-    console.log("Invalid month number");
-    days = 0;
-    break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break; 
+    default:
+        dayName = "Invalid day number";
+        break;   
 }
-if (days != 0) {
-  console.log(`Number of days in month ${month} of year ${year} is: ${days}`);
-}
+console.log(`Day ${dayNumber} is ${dayName}`);

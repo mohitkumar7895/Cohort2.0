@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+
+/* keyframes
+@keyframes changeBackgroundColor{
+    from{
+        background-color: white;
+        border-radius: 0px;
+    }
+    to{background-color: red;
+        border-radius: 50px;
+    }
+} */
+
+/* color,length , angle */
+@property --bgColor{
+    syntax: "<color>";
+    initial-value: red;
+    inherits: false;
+}
+
+@keyframes animateBgColor{
+    from{
+        --bgColor: red;
+    }
+    to{
+        --bgColor: blue;
+    }
+}
+
+
+
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 1px solid white;
+    background-color: var(--bgColor);
+    animation: animateBgColor 10s;
+    
+   
+    /* animation: changeBackgroundColor 5s forwards; */
+    /* background-color: red;
+    animation: move 2s linear infinite;
+    box-shadow: 0 0 50px white; */
+    /* background: conic-gradient(from 180deg,red,blue,yellow,violet,pink,black); */
+}

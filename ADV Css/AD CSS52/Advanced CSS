@@ -1,0 +1,7 @@
+Box-Shadow    --- Box mai css lagana Animate karna 
+text-Shadow    -----   text ko animate or shadow color daina
+conic-gradient   ------ Boxc mai 4 ya 5 clor lga do deg sai set kr do aisa kuch 
+keyframes ------   fix kr ke dai do css ek jgah call kr ke upgrade kro css ko
+@property
+
+:has::
