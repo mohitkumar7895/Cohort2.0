@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #222;
+     gap: 30px;
+}
+.box{
+    height: 200px;
+    width: 200px;
+   
+}
+
+.red{
+    background: red;
+    anchor-name: --some-anchor;
+}
+.blue{
+    background: blue;
+}
+.green{
+    background: green;
+}
+.anchor{
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    background: yellow;
+    border-radius: 10px;
+    pointer-events: none;
+    transform: translate(-50%,-50%);
+    position-anchor: --some-anchor;
+}

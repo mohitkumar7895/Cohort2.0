@@ -1,3 +1,108 @@
 *{
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: #050011;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+}
+
+/* Custom Rotate var */
+@property --rotate {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* Rotating Border Animation */
+@keyframes borderAnimate {
+    0%   { --rotate: 0deg; }
+    100% { --rotate: 360deg; }
+}
+
+/* CARD */
+.box{
+    width: 330px;
+    padding: 20px;
+    border-radius: 20px;
+
+    background:
+        linear-gradient(#0f001a, #0f001a) padding-box,
+        conic-gradient(from var(--rotate), red, black, red) border-box;
+
+    border: 5px solid transparent;
+    animation: borderAnimate 5s linear infinite;
+    animation-play-state: paused;
+
+    /* Normal state → NO glow */
+    box-shadow: none;
+
+    text-align: center;
+    color: #eee;
+    backdrop-filter: blur(12px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* 🚀 Hover → Glow ON + Animation RUN + Border remains RED */
+.box:hover{
+    animation-play-state: running;
+
+    background:
+        linear-gradient(#0f001a, #0f001a) padding-box,
+        conic-gradient(from var(--rotate), red, black, red) border-box;
+
+    /* Glow on hover */
+    box-shadow:
+        0 0 20px red,
+        0 0 40px rgba(255, 0, 0, 0.7),
+        0 0 80px rgba(255, 0, 0, 0.4),
+        inset 0 0 25px rgba(255, 0, 0, 0.3);
+}
+
+/* PROFILE IMAGE */
+.box img{
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    height: 60%;
+
+    box-shadow:
+        0 0 20px rgba(16, 10, 22, 0.8),
+        0 0 40px rgba(5, 2, 9, 0.6);
+}
+
+/* TITLE */
+.box h1{
+    font-size: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #d4b6ff;
+    text-shadow: 0 0 10px #7d12ff;
+}
+
+/* SUBTITLE */
+.box h3{
+    font-size: 16px;
+    color: #b483ff;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-shadow: 0 0 8px #7d12ff;
+}
+
+/* PARAGRAPH */
+.box p{
+    font-size: 13px;
+    color: #ddd;
+    line-height: 1.1;
 }
