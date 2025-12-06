@@ -127,3 +127,59 @@
 //         this
 //     }
 // }
+
+
+
+//               Prototypes
+//prototype ek object hota hai jo har function ke sath attach hota hai
+
+// class Sketch{
+//     constructor(){
+//         this.character= "ninja";
+//         this.color= "black";
+//     }
+// }
+// Sketch.prototype.weapon = "katana";
+// Sketch.prototype.attack = function(){
+//     console.log("attack with " + this.weapon);
+// }
+
+
+//this ek special keyword hota hai 
+//console.log(this)    ----window
+//function bnaya tab bhe window
+//obj ke under this dekhege to window nhi aayngi tab value aayngii
+//global ---- window
+//obj ke under ---- obj
+//class ke under ---- class ka object
+//function ke under ---- window (by default)
+//event ke under ---- event target
+//arrow function ke under ---- parent scope ka this
+
+
+//call,apply,bind
+let h1 = document.querySelector("h1");
+h1.addEventListener("click", function(){
+    console.log(this);  //this will refer to h1 element
+}
+);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
