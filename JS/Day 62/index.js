@@ -52,3 +52,9 @@
 //for example. If the tenperature is extremely high or extrmely low, throw   error and handel it properly in yopur code.
 
 let url = `https://api.openweathermap.org/data/2.5/onecall?lat={lat}&lon={lon}&exclude={part}&appid=cdfa7576110a2dfc44b6d8aec638a074`;
+
+
+
+
+
+//d
