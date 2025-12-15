@@ -1,0 +1,94 @@
+:root{
+    --pri:#F3E8DF;
+    --sec:#452829;
+    --tri1:#57595B;
+    --tri2:#E8D1C5;
+
+}
+
+
+
+
+@font-face{
+    font-family: aeonik;
+    font-weight: 200;
+    src: url(./AeonikTRIAL-Light.otf);
+}
+
+@font-face{
+    font-family: aeonik;
+    font-weight: 500;
+    src: url(./AeonikTRIAL-Regular.otf);
+}
+
+@font-face{
+    font-family: aeonik;
+    font-weight: 700;
+    src: url(./AeonikTRIAL-Bold.otf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: aeonik;
+    color: var(--pri);
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: var(--sec);
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: var(--tri1);
+
+}
+
+section.allElems{
+     height: 100%;
+     width: 100%;
+     padding: 40px;
+     padding-top: 80px;
+     display: flex;
+     flex-wrap: wrap;
+     align-items: flex-start;
+     gap: 20px;
+}
+
+.elem{
+    background-color: #feba17;
+   overflow: hidden;
+    height: 400px;
+    width: 270px;
+    font-size: 30px;
+    border-radius: 20px;
+    transition: all ease 0.5sec;
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.elem:active{
+    scale: 0.97;
+}
+
+.fullElem{
+    height:100%;
+    width: 100%;
+    background-color: #381c0a;
+    padding: 40px;
+    font-size: 40px;
+    display: none;
+}
