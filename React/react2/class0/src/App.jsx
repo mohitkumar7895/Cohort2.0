@@ -1,9 +1,12 @@
 import React from 'react'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <div>
-      <h1>hello</h1>
+       <Nav />
+       <Footer />
     </div>
   )
 }

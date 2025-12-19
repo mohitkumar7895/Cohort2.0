@@ -29,3 +29,9 @@ npm run dev
 Extension---
 ES7
 Simple react Snippet
+
+eslintconfig- ku use hota hai pure code ko dekhtii hai 
+
+node modules-- server ko run karte hai 
+
+Component -- mai pahela letter capital
