@@ -35,3 +35,6 @@ eslintconfig- ku use hota hai pure code ko dekhtii hai
 node modules-- server ko run karte hai 
 
 Component -- mai pahela letter capital
+
+taiwind--- utility framework    liverary hai 
+//extension tailwind css intelliscence
