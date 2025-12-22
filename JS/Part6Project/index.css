@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --bg-color: #000;
+  --card-bg: #1a1a1a;
+  --text-color: #f4f4f4;
+  --btn-color: #262626;
+  --danger: #ff4d4d;
+  --radius: 10px;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav button {
+  background: var(--btn-color);
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.board {
+  flex: 1;
+  padding: 20px 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.task-column {
+  flex: 1;
+  background: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.task {
+  background: #111;
+  padding: 12px;
+  border-radius: var(--radius);
+}
+
+.task h4 {
+  margin-bottom: 6px;
+}
+
+.task p {
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.task-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-actions button {
+  border: none;
+  background: var(--btn-color);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.task-actions .delete {
+  background: var(--danger);
+}
+

@@ -99,10 +99,54 @@
 //console.log(this)// window
 
 //function scope
-function abcd (){
-    console.log(this);
-}
-abcd();    //window
+// function abcd (){
+//     console.log(this);
+// }
+// abcd();    //window
 
 //method
+//obj ho jata hai
+// let obj = {
+//     name:"mohit",
+//     age:21,
+//     sayName: function (){
+//         console.log(this.age);
+//     }
+// }
+// obj.sayName();   //21
 
+
+//event handler
+
+// document.querySelector("h1").addEventListener("click",
+//     function(){
+//       console.log((this.style.color = "red"))
+//     }
+//     )     // jo h1 likha hai click karte he red ho jaayngaa yrr
+
+
+
+
+//call, apply,bind
+//function ko call karte bakt ap set kr sakte ho ko this ke valur kya hongi
+let obj= {
+    name: "mohit",
+    age:26,
+}
+function abcd(){
+    console.log(this.age);
+}
+
+abcd.call(obj); // function he call hota hai hamesa
+
+//apply - ek sai jyada parameter bhejna 
+
+
+
+
+
+// OOPS
+
+
+
+//Callbacks Promises and async await
