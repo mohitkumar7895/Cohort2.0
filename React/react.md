@@ -80,3 +80,12 @@ use callback
  
 
 folder bnau
+
+
+
+
+// class5
+useState
+
+State MAnagement----
+React ke previous state, current state, next state ko manage kr pa rhey haiu 
