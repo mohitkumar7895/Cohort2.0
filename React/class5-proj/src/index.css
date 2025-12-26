@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.parent{
+  padding: 20px;
+}
