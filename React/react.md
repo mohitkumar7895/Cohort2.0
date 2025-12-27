@@ -89,3 +89,17 @@ useState
 
 State MAnagement----
 React ke previous state, current state, next state ko manage kr pa rhey haiu 
+
+
+
+//Class6
+Form Handling
+
+
+
+
+// two way binding
+form handel
+onchangehandfel
+inpotchange
+value
