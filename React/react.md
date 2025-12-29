@@ -103,3 +103,14 @@ form handel
 onchangehandfel
 inpotchange
 value
+
+
+
+//LocalStorage
+localStorage.clear() - to clean localStorage
+localStorage.setItem("key","value") - to add new item or overwrite existing ones
+localStorage.getItem("key") - to get any item
+localStorage.removeItem("key") - to remove any item
+
+//JSON.stringify: Array/object-> String
+//JSON.parse : String -> Array/object
