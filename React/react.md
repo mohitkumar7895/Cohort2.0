@@ -114,3 +114,37 @@ localStorage.removeItem("key") - to remove any item
 
 //JSON.stringify: Array/object-> String
 //JSON.parse : String -> Array/object
+
+
+
+
+class-9           (API handling Axios)
+API
+frontend , backend ko add krne ka kaam api aata hai 
+data backened sai aata hai ------- json ke form mai 
+jab html sai crete hoke aata hai ssr hota hai server side dendering
+
+
+CSR (client sIDE rENDERING)
+SEO Acha hota hai 
+Backened sai data frontend mai aayngaa
+Json ke form mai 
+
+SSR (Server Side Rendering)
+Seo mai acha km hota hai lekin fast load hota hai 
+Performance Fast 
+
+
+
+Server kya hai
+Ex--Computer System 
+Backened ko frontend sai connect karte hai 
+
+
+//Lorem picsum - website API 
+axios
+npm i axios
+import axios
+axios.get('url') to get data from any api
+promise aaynga to panding mai jayngaa promise ka wait karna padega to async function lgana padega 
+
