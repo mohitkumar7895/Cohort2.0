@@ -148,3 +148,12 @@ import axios
 axios.get('url') to get data from any api
 promise aaynga to panding mai jayngaa promise ka wait karna padega to async function lgana padega 
 
+
+
+
+Class-10
+Useeffect-- use hota hai kise bhe time ko task ko sideeffect pai chalane ke liy
+UI Banana -- React
+Data Insert--- Eseeffect
+Api
+Async process 
