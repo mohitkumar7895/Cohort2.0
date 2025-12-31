@@ -17,3 +17,8 @@ body{
   text-align: center;
 
 }
+.all-cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
