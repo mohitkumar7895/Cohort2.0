@@ -157,3 +157,21 @@ UI Banana -- React
 Data Insert--- Eseeffect
 Api
 Async process 
+
+
+
+Class11
+React--- UI banana
+React Dom- React or Dom ka connect
+React Router Dom-- Library install
+Routing--- Multiple Pages bnane hai ek page sai dusri page pai jata hai 
+React Router dom use karte haiu  is a library 
+
+install React DOm = npm i react router dom
+in main.jsx import {BrowserRouter} from react-router-dom
+wrap <App /> by BrowserRouter in main.jsx file
+In App.jsx import (Route, Routes) from 'rect-roter-dom'
+- make <routes> (collection of all route ) and inside routes make <Route>
+-In <Route />  mention path (where to go) and elements ( what to render) attributes
+In Navbar Use <Li nk>Use <link> tag to redirect to any specific route
+Make Navbar Component as well and add it beforew <Routes> in App.jsx
