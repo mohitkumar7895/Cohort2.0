@@ -175,3 +175,21 @@ In App.jsx import (Route, Routes) from 'rect-roter-dom'
 -In <Route />  mention path (where to go) and elements ( what to render) attributes
 In Navbar Use <Li nk>Use <link> tag to redirect to any specific route
 Make Navbar Component as well and add it beforew <Routes> in App.jsx
+
+
+
+
+
+
+class12
+React-Singel Page Application
+react router dom 
+
+-- BrowserRouter
+   --History API
+   --URL clean
+   --modern apps
+   -- Needs Server Config
+
+Routes - Container
+Route- If URL is X then show Y
