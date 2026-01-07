@@ -193,3 +193,17 @@ react router dom
 
 Routes - Container
 Route- If URL is X then show Y
+
+
+
+
+
+class13-----Context Api
+data- uper sai niche ke or
+App.jsx sai data navbar ke or
+Navbar sai data App.jsx ke or transfer karna
+
+
+
+Class 14 Context Api
+

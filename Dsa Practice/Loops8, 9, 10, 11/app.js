@@ -211,5 +211,74 @@ function sumEvenOdd(n) {
 }
  
 
+//Q-18 Write a program prime or non prime number
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false;
+  }
+  return true;
+} 
+console.log(isPrime(7)); // Output: true
+console.log(isPrime(10)); // Output: false
+sumEvenOdd(10);
+
+//Q-19 Print all prime numbers in a range
+function printPrimesInRange(n) {
+  for (let i = 2; i <= n; i++) {
+    if (isPrime(i)) {
+      console.log(i);
+    }
+  }
+}
+printPrimesInRange(20);
+
+//Breack and Continue Statements
+
+//ex-1 Break Statement
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    break; // Exit the loop when i is 5
+  } 
+  console.log(i);
+}
+// Output: 1 2 3 4
+
+//ex-2 Continue Statement
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    continue; // Skip the iteration when i is 5
+  }
+  console.log(i);
+}
+// Output: 1 2 3 4 6 7 8 9 10
+
+//Q-1 Print numbers from 1 to 10, skipping 5
+for (let i = 1; i <= 10; i++) {
+  if (i === 5) {
+    continue; // Skip 5
+  }
+  console.log(i);
+}
+
+//Q-2 Find the first number divisible by 7 between 1 and 50
+for (let i = 1; i <= 50; i++) {
+  if (i % 7 === 0) {
+    console.log("First number divisible by 7 is: " + i);
+    break; // Exit the loop after finding the first number
+  }
+}
+//Q-3 Print even numbers from 1 to 20, skipping multiples of 4
+for (let i = 1; i <= 20; i++) {
+  if (i % 2 === 0) {
+    if (i % 4 === 0) {
+      continue; // Skip multiples of 4
+    }
+    console.log(i);
+  }
+}
+
+
+
 
 
